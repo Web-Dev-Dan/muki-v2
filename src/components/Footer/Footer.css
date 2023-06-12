@@ -1,0 +1,19 @@
+/*** Footer ***/
+.footer__inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__inner small {
+  color: var(--color--primary);
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__inner small {
+    font-size: 15px;
+  }
+}

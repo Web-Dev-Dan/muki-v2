@@ -40,6 +40,10 @@ function App() {
     ? JSON.parse(localStorage.getItem("userData"))
     : {
         userName: "User",
+        profile: {
+          weight: "",
+          height: "",
+        },
         resources: [],
         rewards: [
           { coins: 10 },
@@ -65,6 +69,7 @@ function App() {
             notes: "These are some notes for the benchpress.",
             img: "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh16114-1542293707.png?crop=0.668xw:1.00xh;0.149xw,0&resize=1200:*",
             videoEmbed: "embedshortcode",
+            isFavorite: false,
             isDeleted: false,
           },
           {
@@ -75,9 +80,10 @@ function App() {
             record: 50,
             dos: [],
             donts: [],
-            notes: "These are some notes for the benchpress.",
+            notes: "These are some notes for the dead lift.",
             img: "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh16114-1542293707.png?crop=0.668xw:1.00xh;0.149xw,0&resize=1200:*",
             videoEmbed: "embedshortcode",
+            isFavorite: false,
             isDeleted: false,
           },
         ],

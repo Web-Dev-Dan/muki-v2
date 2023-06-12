@@ -175,6 +175,11 @@ body {
   padding: 10px;
 }
 
+.btn--transparent {
+  background-color: transparent;
+  border: none;
+}
+
 /*** MAIN ***/
 .main {
   border: 1px solid red;

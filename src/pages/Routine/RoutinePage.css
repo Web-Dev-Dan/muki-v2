@@ -1,0 +1,51 @@
+/*** Routine Page ***/
+
+.routine {
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.routine--top {
+  color: var(--color--primary);
+  gap: 20px;
+  transition: 0.2s;
+}
+
+.routine__button__close {
+  display: none;
+}
+
+.routine--top .btn {
+  font-size: 24px;
+  color: var(--color--primary);
+  align-self: flex-start;
+}
+
+.routine--bottom {
+  /* border: 1px solid green; */
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.routine--active .routine--top {
+  padding-bottom: 20px;
+}
+
+.routine--active .routine__button__open {
+  display: none;
+}
+
+.routine--active .routine__button__close {
+  display: flex;
+}
+
+.routine--active .routine--bottom {
+  max-height: 1000px;
+  overflow: scroll;
+}
+
+.routine-container {
+  gap: 20px;
+}

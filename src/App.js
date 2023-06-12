@@ -108,8 +108,11 @@ function App() {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   function toggleMobileMenu() {
-    console.log("Mobile menu toggled");
     setMobileMenuActive(!mobileMenuActive);
+  }
+
+  function mobileMenuButtonClicked() {
+    setMobileMenuActive(false);
   }
 
   // window.navigator.vibrate(50) - make phone vibrate when clicked
@@ -147,7 +150,10 @@ function App() {
       <div
         className={`container ${mobileMenuActive ? "mobile-menu--active" : ""}`}
       >
-        <Navigation toggleMobileMenu={() => toggleMobileMenu()} />
+        <Navigation
+          toggleMobileMenu={() => toggleMobileMenu()}
+          mobileMenuButtonClicked={() => mobileMenuButtonClicked()}
+        />
 
         <main className="main">
           <Routes>

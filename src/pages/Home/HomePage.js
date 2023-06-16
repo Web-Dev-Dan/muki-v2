@@ -8,7 +8,7 @@ function HomePage() {
     setTimeout(() => {
       setIsVisible(true);
       navigator.vibrate(200);
-    }, 2);
+    }, 200);
     setIsVisible(false);
   }
 

@@ -43,6 +43,8 @@ function App() {
         profile: {
           weight: "",
           height: "",
+          image:
+            "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg",
         },
         resources: [],
         rewards: [
@@ -166,7 +168,10 @@ function App() {
             <Route path="/" element={<HomePage authed={true} />} />
             <Route path="/routine" element={<RoutinePage authed={true} />} />
             <Route path="/calendar" element={<CalendarPage authed={true} />} />
-            <Route path="/settings" element={<SettingsPage authed={true} />} />
+            <Route
+              path="/settings"
+              element={<SettingsPage authed={true} userData={userData} />}
+            />
           </Routes>
 
           <h1>{userData.userName}</h1>

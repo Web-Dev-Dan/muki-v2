@@ -7,7 +7,7 @@ function HomePage() {
   function fireConfetti() {
     setTimeout(() => {
       setIsVisible(true);
-      Navigator.vibrate(200);
+      navigator.vibrate(200);
     }, 2);
     setIsVisible(false);
   }

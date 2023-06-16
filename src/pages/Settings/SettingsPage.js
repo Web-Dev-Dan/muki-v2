@@ -5,7 +5,6 @@ function SettingsPage({ userData }) {
     <div className="main__page">
       <div className="cont--max">
         <p>Settings Page</p>
-        <img src={profileImage} />
       </div>
     </div>
   );

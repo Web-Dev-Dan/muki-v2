@@ -7,13 +7,13 @@
 .footer__inner small {
   color: var(--color--primary);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 767px) {
   .footer__inner small {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
